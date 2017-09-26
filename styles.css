@@ -73,8 +73,40 @@ ul{
 .contact form button, .contact form input, .contact form textarea{
   width: 100%;
   padding: 1em;
+  border: 1px solid #80bfff;
 }
 
+.contact form button{
+  background: #80bfff;
+  border: 0;
+  text-transform: uppercase;
+}
+
+.contact form button:hover,.contact form button:focus{
+  background: #3399ff;
+  color: #fff;
+  outline: 0;
+  transition: background-color 1s ease-out;
+}
+
+/* LARGE SCREENS */
+@media(min-width:700px){
+  .wrapper{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+  }
+
+  .wrapper > *{
+    padding: 2em;
+  }
+
+  .company-info h3, .company-info ul, .brand{
+    text-align: left;
+  }
+
+
+
+}
 
 
 
